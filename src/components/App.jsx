@@ -1,46 +1,27 @@
 import { HandlerClickPlus } from './JS/button';
 import { HandlerClickMinus } from './JS/button';
+import { BbuttonStyles } from './JS/botton.Styles';
+import { ContainerStyles } from './JS/containerStyles';
 
 export const App = () => {
   return (
-    <div
-      style={{
-        height: '100vh',
-        display: 'flex',
-        justifyContent: 'center',
-        alignItems: 'center',
-        fontSize: 40,
-        color: '#010101',
-      }}
-    >
-      <button
+    <ContainerStyles>
+      <BbuttonStyles
         type="button"
-        style={{
-          width: '100px',
-          height: '100px',
-          fontSize: '20px',
-          fontWeight: '800',
-        }}
         onClick={() => {
           HandlerClickPlus();
         }}
       >
         + Click
-      </button>
-      <button
+      </BbuttonStyles>
+      <BbuttonStyles
         type="button"
-        style={{
-          width: '100px',
-          height: '100px',
-          fontSize: '20px',
-          fontWeight: '800',
-        }}
         onClick={() => {
           HandlerClickMinus();
         }}
       >
         - Click
-      </button>
-    </div>
+      </BbuttonStyles>
+    </ContainerStyles>
   );
 };
