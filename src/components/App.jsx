@@ -1,3 +1,6 @@
+import { HandlerClickPlus } from './JS/button';
+import { HandlerClickMinus } from './JS/button';
+
 export const App = () => {
   return (
     <div
@@ -10,7 +13,34 @@ export const App = () => {
         color: '#010101',
       }}
     >
-      React template
+      <button
+        type="button"
+        style={{
+          width: '100px',
+          height: '100px',
+          fontSize: '20px',
+          fontWeight: '800',
+        }}
+        onClick={() => {
+          HandlerClickPlus();
+        }}
+      >
+        + Click
+      </button>
+      <button
+        type="button"
+        style={{
+          width: '100px',
+          height: '100px',
+          fontSize: '20px',
+          fontWeight: '800',
+        }}
+        onClick={() => {
+          HandlerClickMinus();
+        }}
+      >
+        - Click
+      </button>
     </div>
   );
 };
