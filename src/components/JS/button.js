@@ -17,17 +17,26 @@ class Counter extends React.Component {
   // він сам потім добавляє конструктор і супер при компіляції
 
   state = {
-    value: 5,
+    value: 0,
   };
+  // для перезапису значення на інше використовуємо :
+  //   handlerIncriment = event => {
+  //     this.setState({
+  //       value: 222,
+  //     });
+  // console.log('press buttonPlas');
+  // console.log(this);
+  // console.log(event);
+  //   };
+
+  // для зміни значення на інше від попереднього використовуємо функцію :
 
   handlerIncriment = event => {
-    this.setState({
-      value: this.state.value + 1,
-    });
-    // console.log('press buttonPlas');
-    // console.log(this);
-    // console.log(event);
+    this.setState(presState => ({
+      value: presState.value + 1,
+    }));
   };
+
   render() {
     return (
       <div
