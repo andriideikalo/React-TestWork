@@ -7,19 +7,38 @@ import { ContainerStyles } from './containerStyles';
 import { TitleStyles } from './containerStyles';
 // import { render } from '@testing-library/react';
 
-const Counter = () => (
-  <div className="Counter">
-    <TitleStyles className="Counter_value">0</TitleStyles>
+class Counter extends React.Component {
+  render() {
+    return (
+      <div className="Counter">
+        <TitleStyles className="Counter_value">0</TitleStyles>
 
-    <ContainerStyles className="ClickPlus">
-      <ButtonStyles type="button" onClick={HandlerClickPlus}>
-        + Click
-      </ButtonStyles>
-      <ButtonStyles type="button" onClick={HandlerClickMinus}>
-        - Click
-      </ButtonStyles>
-    </ContainerStyles>
-  </div>
-);
+        <ContainerStyles className="ClickPlus">
+          <ButtonStyles type="button" onClick={HandlerClickPlus}>
+            + Click
+          </ButtonStyles>
+          <ButtonStyles type="button" onClick={HandlerClickMinus}>
+            - Click
+          </ButtonStyles>
+        </ContainerStyles>
+      </div>
+    );
+  }
+}
+
+// const Counter = () => (
+//   <div className="Counter">
+//     <TitleStyles className="Counter_value">0</TitleStyles>
+
+//     <ContainerStyles className="ClickPlus">
+//       <ButtonStyles type="button" onClick={HandlerClickPlus}>
+//         + Click
+//       </ButtonStyles>
+//       <ButtonStyles type="button" onClick={HandlerClickMinus}>
+//         - Click
+//       </ButtonStyles>
+//     </ContainerStyles>
+//   </div>
+// );
 
 export default Counter;
