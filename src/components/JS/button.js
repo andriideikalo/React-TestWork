@@ -1,42 +1,20 @@
 import React from 'react';
 
 // import { HandlerClickPlus } from './JS/button';
-import { HandlerClickMinus } from './JS/button';
-import { BbuttonStyles } from './JS/botton.Styles';
-import { ContainerStyles } from './JS/containerStyles';
+// import { HandlerClickMinus } from './JS/button';
+// import { BbuttonStyles } from './JS/botton.Styles';
+// import { ContainerStyles } from './JS/containerStyles';
 // import { render } from '@testing-library/react';
 
-class ClickPlus extends React.Component {
-  render() {
-    return (
-      <ContainerStyles className="ClickPlus">
-        <BbuttonStyles
-          type="button"
-          // onClick={() => {
-          // HandlerClickPlus();
-          // }}
-          onClick={this.classClickPlus}
-        >
-          + Click
-        </BbuttonStyles>
-        <BbuttonStyles
-          type="button"
-          onClick={() => {
-            HandlerClickMinus();
-          }}
-        >
-          - Click
-        </BbuttonStyles>
-      </ContainerStyles>
-    );
-    // };
-  }
-}
+const Counter = () => (
+  <div className="Counter">
+    <span className="Counter_value">0</span>
 
-// export const HandlerClickPlus = () => {
-//   console.log('press plus');
-// };
+    <div className="ClickPlus">
+      <button type="button">+ Click</button>
+      <button type="button">- Click</button>
+    </div>
+  </div>
+);
 
-// export const HandlerClickMinus = () => {
-//   console.log('press minus');
-// };
+export default Counter;

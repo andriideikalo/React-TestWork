@@ -1,11 +1,12 @@
 import React from 'react';
 
-import ClickPlus from './JS/button';
+import Counter from './JS/button';
 
 const App = () => (
   <>
     <h1>Стан компоненту</h1>
-    <ClickPlus />
+
+    <Counter />
   </>
 );
 export default App;
