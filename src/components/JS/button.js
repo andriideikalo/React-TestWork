@@ -7,10 +7,26 @@ import { ContainerStyles } from './containerStyles';
 import { TitleStyles } from './containerStyles';
 
 class Counter extends React.Component {
+  //   constructor() {
+  //     super();
+  //     this.state = {
+  //       value: 5,
+  //     };
+  //   }
+  // в react пишемо без конструктора, просто :
+  // він сам потім добавляє конструктор і супер при компіляції
+
+  state = {
+    value: 5,
+  };
+
   handlerIncriment = event => {
-    console.log('press buttonPlas');
-    console.log(this);
-    console.log(event);
+    this.setState({
+      value: this.state.value + 1,
+    });
+    // console.log('press buttonPlas');
+    // console.log(this);
+    // console.log(event);
   };
   render() {
     return (
@@ -20,7 +36,7 @@ class Counter extends React.Component {
         //   console.log('222');
         // }}
       >
-        <TitleStyles className="Counter_value">0</TitleStyles>
+        <TitleStyles className="Counter_value">{this.state.value}</TitleStyles>
 
         <ContainerStyles className="ClickPlus">
           <ButtonStyles type="button" onClick={this.handlerIncriment}>
