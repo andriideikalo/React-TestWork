@@ -1,20 +1,28 @@
 import React from 'react';
 
-import { HandlerClickPlus } from './HandlerClick';
+// import { HandlerClickPlus } from './HandlerClick';
 import { HandlerClickMinus } from './HandlerClick';
 import { ButtonStyles } from './botton.Styles';
 import { ContainerStyles } from './containerStyles';
 import { TitleStyles } from './containerStyles';
-// import { render } from '@testing-library/react';
 
 class Counter extends React.Component {
+  handlerIncriment = () => {
+    console.log('press buttonPlas');
+    console.log(this);
+  };
   render() {
     return (
-      <div className="Counter">
+      <div
+        className="Counter"
+        // onMouseMove={() => {
+        //   console.log('222');
+        // }}
+      >
         <TitleStyles className="Counter_value">0</TitleStyles>
 
         <ContainerStyles className="ClickPlus">
-          <ButtonStyles type="button" onClick={HandlerClickPlus}>
+          <ButtonStyles type="button" onClick={this.handlerIncriment}>
             + Click
           </ButtonStyles>
           <ButtonStyles type="button" onClick={HandlerClickMinus}>
