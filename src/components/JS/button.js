@@ -7,9 +7,10 @@ import { ContainerStyles } from './containerStyles';
 import { TitleStyles } from './containerStyles';
 
 class Counter extends React.Component {
-  handlerIncriment = () => {
+  handlerIncriment = event => {
     console.log('press buttonPlas');
     console.log(this);
+    console.log(event);
   };
   render() {
     return (
