@@ -1,7 +1,7 @@
 import React from 'react';
 
-// import { HandlerClickPlus } from './JS/button';
-// import { HandlerClickMinus } from './JS/button';
+import { HandlerClickPlus } from './HandlerClick';
+import { HandlerClickMinus } from './HandlerClick';
 import { ButtonStyles } from './botton.Styles';
 import { ContainerStyles } from './containerStyles';
 import { TitleStyles } from './containerStyles';
@@ -12,8 +12,12 @@ const Counter = () => (
     <TitleStyles className="Counter_value">0</TitleStyles>
 
     <ContainerStyles className="ClickPlus">
-      <ButtonStyles type="button">+ Click</ButtonStyles>
-      <ButtonStyles type="button">- Click</ButtonStyles>
+      <ButtonStyles type="button" onClick={HandlerClickPlus}>
+        + Click
+      </ButtonStyles>
+      <ButtonStyles type="button" onClick={HandlerClickMinus}>
+        - Click
+      </ButtonStyles>
     </ContainerStyles>
   </div>
 );
