@@ -83,11 +83,3 @@ export default Counter;
 
 //     <ContainerStyles className="ClickPlus">
 //       <ButtonStyles type="button" onClick={HandlerClickPlus}>
-//         + Click
-//       </ButtonStyles>
-//       <ButtonStyles type="button" onClick={HandlerClickMinus}>
-//         - Click
-//       </ButtonStyles>
-//     </ContainerStyles>
-//   </div>
-// );
