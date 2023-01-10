@@ -80,5 +80,3 @@ export default Counter;
 // const Counter = () => (
 //   <div className="Counter">
 //     <TitleStyles className="Counter_value">0</TitleStyles>
-
-//     <ContainerStyles className="ClickPlus">
