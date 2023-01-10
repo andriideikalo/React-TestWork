@@ -82,4 +82,3 @@ export default Counter;
 //     <TitleStyles className="Counter_value">0</TitleStyles>
 
 //     <ContainerStyles className="ClickPlus">
-//       <ButtonStyles type="button" onClick={HandlerClickPlus}>
