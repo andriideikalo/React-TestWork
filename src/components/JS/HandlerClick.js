@@ -5,3 +5,5 @@ export const HandlerClickPlus = () => {
 export const HandlerClickMinus = () => {
   console.log('click minus');
 };
+const var = "";
+
