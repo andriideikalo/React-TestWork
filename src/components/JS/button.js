@@ -1,6 +1,6 @@
 import React from 'react';
 
-// import { HandlerClickPlus } from './HandlerClick';
+import { HandlerClickPlus } from './HandlerClick';
 import { HandlerClickMinus } from './HandlerClick';
 import { ButtonStyles } from './botton.Styles';
 import { ContainerStyles } from './containerStyles';
@@ -37,6 +37,12 @@ class Counter extends React.Component {
     }));
   };
 
+ handlerDecriment = event => {
+    this.setState(presState => ({
+      value: presState.value - 1,
+    }));
+  };
+
   render() {
     return (
       <div
@@ -51,7 +57,7 @@ class Counter extends React.Component {
           <ButtonStyles type="button" onClick={this.handlerIncriment}>
             + Click
           </ButtonStyles>
-          <ButtonStyles type="button" onClick={HandlerClickMinus}>
+          <ButtonStyles type="button" onClick={this.handlerDecriment} HandlerClickMinus>
             - Click
           </ButtonStyles>
         </ContainerStyles>
