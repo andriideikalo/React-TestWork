@@ -54,10 +54,10 @@ class Counter extends React.Component {
         <TitleStyles className="Counter_value">{this.state.value}</TitleStyles>
 
         <ContainerStyles className="ClickPlus">
-          <ButtonStyles type="button" onClick={this.handlerIncriment}>
-            + Click
+          <ButtonStyles type="button" onClick={() => { this.handlerIncriment(); HandlerClickPlus(); }}>
+                      + Click
           </ButtonStyles>
-          <ButtonStyles type="button" onClick={this.handlerDecriment} HandlerClickMinus>
+          <ButtonStyles type="button" onClick={() => { this.handlerDecriment(); HandlerClickMinus(); }} >
             - Click
           </ButtonStyles>
         </ContainerStyles>
