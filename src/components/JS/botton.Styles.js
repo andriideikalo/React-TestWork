@@ -5,4 +5,5 @@ export const ButtonStyles = styled.button`
   height: 100px;
   font-size: 20px;
   font-weight: 800;
+  //
 `;
